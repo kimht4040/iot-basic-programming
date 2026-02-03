@@ -34,4 +34,5 @@ IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
     - 실수형 및 변수 : [확인](./Day02/Chap03-Solution/Chap03-02-app/main.c)
     - 데이터 입력 : [확인](./Day02/Chap03-Solution/Chap03-03-app/main.c)
 
-    - 연산자 :
+    - 연산자 : [확인](./Day02/Chap04-Solution/Chap04-01-app/main.c)
+        - 퀴즈(bmi) : [확인](./Day02/Chap04-Solution/Chap04-Quiz-4/Chap04-Quiz-4.cpp)
