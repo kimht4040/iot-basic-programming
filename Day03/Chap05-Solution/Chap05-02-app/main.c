@@ -1,4 +1,4 @@
-//switch case ¹®
+ï»¿//switch case ë¬¸
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
@@ -9,7 +9,7 @@ int main() {
 
 	int rank, money=0;
 	
-	printf("µî¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("ë“±ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf("%d", &rank);
 	
 
@@ -39,7 +39,7 @@ int main() {
 	else
 		money = 10000;
 
-	printf("»ó±İÀº : %d¿ø ÀÔ´Ï´Ù.", money);
+	printf("ìƒê¸ˆì€ : %dì› ì…ë‹ˆë‹¤.", money);
 
 
 

@@ -42,5 +42,30 @@ IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
 1. 제어문
     - if문 : [확인](./Day03/Chap05-Solution/Chap05-01-app/main.c)
     - switch-case문 : [확인](./Day03/Chap05-Solution/Chap05-02-app/main.c)
-    - for문 : [확인](./Day03/Chap05-Solution/Chap05-03-app/main.c)
 
+2. 반복문 
+    - while : [확인](./Day03/Chap05-Solution/Chap05-03-app/main.c)
+    - for : [확인](./Day03/Chap05-Solution/Chap05-04-app/main.c)
+    - 구구단 : [확인](./Day03/Chap05-Solution/Chap05-05-app/main.c)
+    - 무한루프 :[확인](./Day03/Chap05-Solution/Chap05-06-app/)
+    - 컨티뉴, 브레이크 :[확인](./Day03/Chap05-Solution/Chap05-07-app/main.c)
+
+3. 디버깅
+    - 단축키[확인](./Day03/Chap05-Solution/)
+        - F5 : 디버깅 시작
+        - shift + f5 : 디버깅 종료
+        - F9 : 브레이크 포인트
+        - F10 : 소스코드 한 줄 실행   
+        - F11 : 소스코드 내 함수나 클래스가 존재하면 내부로 진입   
+        - 로컬, 조사식 창 활용
+
+4. 함수
+    - 함수 기본 : [확인](./Day03/Chap07-Solution/Chap07-01-app/main.c)
+
+
+
+## 4일차 
+### c기본 문법 계속
+
+1. 함수 계속
+    - 함수 유형 :

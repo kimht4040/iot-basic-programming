@@ -22,7 +22,7 @@ int main(void) {
 	do {
 		printf("do~while실행\n");
 		a--;
-	} while (a >= 0);
+	} while (a > 0);
 	printf("do~while종료\n");
 
 
