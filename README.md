@@ -36,3 +36,11 @@ IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
 
     - 연산자 : [확인](./Day02/Chap04-Solution/Chap04-01-app/main.c)
         - 퀴즈(bmi) : [확인](./Day02/Chap04-Solution/Chap04-Quiz-4/Chap04-Quiz-4.cpp)
+
+## 3일차
+
+1. 제어문
+    - if문 : [확인](./Day03/Chap05-Solution/Chap05-01-app/main.c)
+    - switch-case문 : [확인](./Day03/Chap05-Solution/Chap05-02-app/main.c)
+    - for문 : [확인](./Day03/Chap05-Solution/Chap05-03-app/main.c)
+
