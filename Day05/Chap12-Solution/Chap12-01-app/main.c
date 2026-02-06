@@ -23,7 +23,7 @@ int main() {
 	printf("%c\n", *(fruit + 1));
 	printf("%c\n", fruit[0]);
 
-	strcpy(fruit, "banana");
+	strcpy(fruit, "banan");
 	printf("%s\n", fruit);
 
 
