@@ -101,3 +101,43 @@ IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
 
 ## 6일차
 ### C 중급 문법
+
+4. 문자열과 포인터 : [소스](./Day06/Chap13-Solution/Chap13-01-app/main.c)
+    - 문자열 연산 함수 - 자주 사용하는 문자열 처리 내장함수
+    - strlen, strcpy, strncpy, strcat, strncat, strcmp, strncmp
+
+5. Tip
+    - #pragma region, #pragma endregion 소스코드 영역에서 일부 축소
+
+
+6. 변수 영역과 데이터 공유 : [소스](./Day06/Chap13-Solution/Chap13-02/main.c)
+    - auto : 지역변수 
+    - global : 전역 변수
+    - static : 불변 : [소스](./Day06/Chap13-Solution/Chap13-03-app/main.c)
+    - register : cpu의 레지스터 메모리에 변수 저장
+
+7. 데이터 공유 방법
+    - 데이터를 필요할떄마다 복사하는 것보다, 같이 공유하는 것이 메모리를 절약하는 방법임
+    - 값을 복사해서 전달
+    - 주소를 전달
+    - 포인터 변수를 전달
+
+
+
+8. 다차원 배열 : [소스](./Day06/Chap14-Solution/Chap14-01-app/main.c)
+    - 1차원 배열 : score[5] 
+    - 2차원 배열 : score[5] * 3  => score[3][4] 3행(row) 4열(colum)
+
+9. 포인터 배열
+    - 2차원 배열과 유사 : [소스](./Day06/Chap14-Solution/Chap14-02-app/main.c)
+
+
+
+10. 이중포인터
+    - 값은 a =10 밖에 없음 나머지는 모두 주소
+    ![사진](./KakaoTalk_20260209_162009759.png)
+    - [단일 포인터 배열](./Day05/Chap10-Solution/Chap10-03-app/main.c/) vs [이중 포인터 배열](./Day06/Chap15-Solution/Chap15-02-app/main.c)
+
+11. 함수와 void포인터
+    - 
+
