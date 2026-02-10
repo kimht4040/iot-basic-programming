@@ -159,11 +159,11 @@ IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
 
 3. 메모리 동적할당
     - 프로그램에 필요한 메모리를 원하는 만큼 확보하기 위해서 사용
-    - malloc - memory allocation 메모리 동적할당
-    - calloc - contiguos allocation 연속된 메모리 동적할당 0으로 초기화
+    - malloc - memory allocation 메모리 동적할당[소스](./Day07/Chap16-Solution/Chap16-01-app/main.c)
+    - calloc - contiguos allocation 연속된 메모리 동적할당 0으로 초기화[소스](./Day07/Chap16-Solution/Chap16-03-app/main.c)
     - realloc - re-allocation 메모리 크기 조정
     - free - 메모리 반환
-    - "NULL" - 아무것도 가리키지 않는 포인터 값
+    - **NULL** - 아무것도 가리키지 않는 포인터 값
 
 4. 프로그램의 메모리 영역
     
@@ -175,16 +175,17 @@ IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
     - 스택 - 지역변수들이 할당되는 영역
     - 기타 데이터 영역 - 전역변수, static 변수들 
 
-5. 동적 할당 저장공간 활용
-    - 영어사전과 같은 데이터를 저장 할때
+5. 동적 할당 저장공간 활용[소스](./Day07/Chap16-Solution/Chap16-04-app/main.c)
+    - 영어사전과 같은 데이터를 저장 할때[소스](./Day07/Chap16-Solution/Chap16-05-app/main.c)
     - 동적할당으로 메모리 절약
 
-6. main 함수 명령행 인수 사용
+
+6. main 함수 명령행 인수 사용[소스](./Day07/Chap16-Solution/Chap16-06-app/main.c)
     - int main(int argc, char** argv) 가 기본 메인함수임
     ![alt text](KakaoTalk_20260210_162435317.png)
 
 
-7. 사용자 정의 자료형 - 구조체
+7. 사용자 정의 자료형 - 구조체[소스](./Day07/Chap17-Solution/Chap17-01-app/main.c)
     - c언어는 절차적 프로그래밍 언어임
     - c++는 객체지향 프로그래밍 언어임(+ C#, java, python)
     - 객체지향적 개념을 사용하기 시작한게 구조체임

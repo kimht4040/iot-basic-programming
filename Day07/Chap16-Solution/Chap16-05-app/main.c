@@ -1,4 +1,5 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+﻿//동적할당 처리함수
+#define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
 #include <stdlib.h>
