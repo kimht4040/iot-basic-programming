@@ -6,4 +6,7 @@
   <Project Path="Chap16-01-app/Chap16-01-app.vcxproj" Id="cd246924-6ad1-448f-ad30-1e72be177a77" />
   <Project Path="Chap16-02-app/Chap16-02-app.vcxproj" Id="e5534fa6-0e40-416c-bd76-d8a528fd2cf5" />
   <Project Path="Chap16-03-app/Chap16-03-app.vcxproj" Id="3b2f019f-57a7-48de-88f1-8eceacf40b1b" />
+  <Project Path="Chap16-04-app/Chap16-04-app.vcxproj" Id="14458d69-60c8-4cb1-9c91-f9c0416062df" />
+  <Project Path="Chap16-05-app/Chap16-05-app.vcxproj" Id="dcb510d8-656f-475b-b84f-36de56600339" />
+  <Project Path="Chap16-06-app/Chap16-06-app.vcxproj" Id="db9179e0-1303-42e1-9ee4-a1894479ef0e" />
 </Solution>
