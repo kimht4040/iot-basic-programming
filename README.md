@@ -136,8 +136,35 @@ IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
 10. 이중포인터
     - 값은 a =10 밖에 없음 나머지는 모두 주소
     ![사진](./KakaoTalk_20260209_162009759.png)
-    - [단일 포인터 배열](./Day05/Chap10-Solution/Chap10-03-app/main.c/) vs [이중 포인터 배열](./Day06/Chap15-Solution/Chap15-02-app/main.c)
+    - [단일 포인터](./Day05/Chap10-Solution/Chap10-03-app/main.c/) vs [이중 포인터](./Day06/Chap15-Solution/Chap15-02-app/main.c)
 
-11. 함수와 void포인터
-    - 
+
+
+## 7일차
+### C 중급 문법
+
+1. 함수포인터
+    - 함수 포인터 - 함수도 메모리 상에 주소를 가지고 있음[소스](./Day07/Chap15-Solution/Chap15-01-app/main.c)
+    - 변수와 동일하게 함수도 주소를 통해서 여러 함수를 변경해서 사용 
+    - 실행시점에 어떤 함수가 실행될지 모를때[소스](./Day07/Chap15-Solution/Chap15-02-app/main.c)
+    - 사용 예 - 임베디드 하드웨어 이벤트 인터럽트, 상태머신, GUI 이벤트, 게임 상태별 로직
+    - 조건문을 줄이고, 구조를 유연하게 만들기 위해서 사용
+
+2. void 함수 포인터[소스](./Day07/Chap15-Solution/Chap15-03-app/main.c)
+    - void - 리턴값이 없을 때, 매개변수가 없을때 사용
+    - 포인터 특징 - int 형 int*, double 형 double* 와 같이 타입형이 일치해야
+    - 가리키는 자료형이 달라도 사용할 수 있는 포인터 -> void 포인터
+    - void는 아직 자료형이 정해지지 않았음
+    - void 포인터에서 형변환을 제거하면 오류! - (int*), (double*)등
+
+3. 메모리 동적할당
+    - 프로그램에 필요한 메모리를 원하는 만큼 확보하기 위해서 사용
+    - malloc - memory allocation 메모리 동적할당
+    - calloc - contiguos allocation 연속된 메모리 동적할당 0으로 초기화
+    - realloc - re-allocation 메모리 크기 조정
+    - free - 메모리 반환
+    - "NULL" - 아무것도 가리키지 않는 포인터 값
+
+4. 프로그램의 메모리 영역
+
 
