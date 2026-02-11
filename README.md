@@ -1,10 +1,17 @@
 # iot-basic-programming
 IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
 
-
-
+## 1일차
+- Git 설치 주소 : https://git-scm.com/ 
+- vscode 설치 주소 : https://code.visualstudio.com/, 
+- vscode 설치 명령어(window) : winget install Microsoft.VisualStudioCode
+- vscode 설치 명령어(mac - hombrew) : brew install --cask visual-studio-code
+- vs 설치 주소 : https://visualstudio.microsoft.com/ko/downloads/
 
 데이터 출력방법 : [확인](./Day01/Chap02-Solution/Chap02-02-app/main.c)
+
+### 비주얼 스튜디오 
+- 프로젝트가 여러개일 경우 시작옵션에서 시작할 프로젝트 설정 가능
 
 ### C기본문법
 
@@ -23,6 +30,11 @@ IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
     |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
     |16진수|0x0|0x1|0x2|0x3|0x4|0x5|0x6|0x7|0x8|0x9|0xA|
     |8진수|0|1|2|3|4|5|6|7|10|11|12|
+
+### 컴파일과 컴파일러
+- 컴파일(빌드) : 소스코드 파일을 컴퓨터가 실행할 수 있는 파일로 변경, 생성
+    - 전처리, 오브젝트화, 링킹을 통해 실행파일을 만다는 과정
+    - c, cpp -> 확장자 exe 파일로 생성 
 
 
 ## 2일차
@@ -82,7 +94,7 @@ IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
         - 주소를 공유해서 함수 어디서나 변수의 값을 변경할 수 있음
 
 2. 배열과 포인터[확인](./Day05/Chap10-Solution/Chap10-02-app/main.c)
-    - scanf 배열 str[80]선언 후 &str 사용
+    - scanf 배열 str[80]선언 후 str로 사용
     - 실무에서 데이터를 공유하면 보통 배열도 많이 사용됨
     - 배열을 그래도 매개변수로 전달하면 메모리를 많이 사용하게 됨
     - int ary[100] -> main에서 400바이트, 함수에서 400바이트 메모리 공간 확보함(총 800)
@@ -115,11 +127,12 @@ IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
     - global : 전역 변수
     - static : 불변 : [소스](./Day06/Chap13-Solution/Chap13-03-app/main.c)
     - register : cpu의 레지스터 메모리에 변수 저장
+    - extern : 
 
 7. 데이터 공유 방법
     - 데이터를 필요할떄마다 복사하는 것보다, 같이 공유하는 것이 메모리를 절약하는 방법임
-    - 값을 복사해서 전달
-    - 주소를 전달
+    - 값을 복사해서 전달(Call by value)
+    - 주소를 전달(Call by reference)
     - 포인터 변수를 전달
 
 
@@ -185,8 +198,30 @@ IoT개발자과정 기초 프로그래밍 언어 학습 리포지토리
     ![alt text](KakaoTalk_20260210_162435317.png)
 
 
-7. 사용자 정의 자료형 - 구조체[소스](./Day07/Chap17-Solution/Chap17-01-app/main.c)
+
+
+## 8일차
+### C언어 중급 문법
+1. 사용자 정의 자료형 - 구조체[소스](./Day08/Chap18-Solution/Chap18-01-app/main.c)
     - c언어는 절차적 프로그래밍 언어임
     - c++는 객체지향 프로그래밍 언어임(+ C#, java, python)
     - 객체지향적 개념을 사용하기 시작한게 구조체임
-    - 
+    - 구초제 포인터 [소스](./Day08/Chap18-Solution/Chap18-04-app/main.c)
+    - 구초제 내 구조체 [소스](./Day08/Chap18-Solution/Chap18-03-app/main.c)
+    - 구조체 사용 [소스](./Day08/Chap18-Solution/Chap18-02-app/main.c)
+2. 사용자 정의 자료형 - 공용체, 열거형 
+
+3. 파일 입출력
+    - 파일 종류 : 텍스트 파일, 바이너리(2진) 파일
+    - 바이너리 파일 : 데이터 파일, 내부적으로 0과 1로 저장된 파일(dat, exe, mp3, hwp, doc 등등)
+        ![alt text](image.png)
+
+
+    - 텍스트 파일 : 사람이 읽을 수 있는 문자로 된 파일(txt, log, cmd, bat, docx 등등)
+        ![alt text](KakaoTalk_20260211_170205383.png)
+
+
+
+## 9일차
+4. 전처리, 분할 컴파일
+5. 토이프로젝트 - 주소록 프로그램
