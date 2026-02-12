@@ -3,6 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Chap-18-01-app/Chap-18-01-app.vcxproj" />
-  <Project Path="Chap18-02-app/Chap18-02-app.vcxproj" />
+  <Project Path="../../../../../../Desktop/code/iot-basic-programming/Day09/Chap-18-Solution/Chap-18-01-app/Chap-18-01-app.vcxproj" Id="0b941d90-3342-450d-aae3-a7b8b51e5047" />
+  <Project Path="../../../../../../Desktop/code/iot-basic-programming/Day09/Chap-18-Solution/Chap18-02-app/Chap18-02-app.vcxproj" Id="6f7659dc-3c64-4a4a-b7f4-441b9b38f98e" />
+  <Project Path="../../../../../../Desktop/code/iot-basic-programming/Day09/Chap-18-Solution/Chap18-03-app/Chap18-03-app.vcxproj" Id="dd49633c-d4ad-4e2c-9a97-77c55a13c1bb" />
 </Solution>
