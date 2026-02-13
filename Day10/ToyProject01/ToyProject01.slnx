@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="AddressbookApp/AddressbookApp.vcxproj" Id="9721f634-b40a-4fa8-89c6-0520317c806b" />
+  <Project Path="addressbookapp2/addressbookapp2.vcxproj" Id="8f18ccb7-98b2-485a-8fe6-24318044261c" />
+  <Project Path="addressbookapp3/addressbookapp3.vcxproj" Id="a8e692db-62a0-443b-bb39-0aac0d74ce6c" />
+  <Project Path="addressbookapp4.c/addressbookapp4.c.vcxproj" Id="1af58def-5ed8-404a-9646-d0a2c654d0d3" />
+</Solution>
