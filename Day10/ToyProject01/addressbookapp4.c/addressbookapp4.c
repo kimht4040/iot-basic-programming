@@ -65,7 +65,7 @@ int main() {
 			break;
 		case 8:
 			printf("종료\n");
-			exit(1);
+			exit(0);
 			break;
 		default:
 			printf("1 ~ 8사이에 선택\n");
@@ -227,6 +227,7 @@ static void update() {
 static void del() {
 	clear_screen();
 	int num;
+	char ch,dh;
 	if (count == 0) {
 		printf("저장된 연락처 없음\n");
 		return;
@@ -243,11 +244,21 @@ static void del() {
 	}
 	printf("삭제를 원하는 사람의 번호를 입력하세요 : ");
 	scanf("%d", &num);
-	for (int i = num - 1; i < count-1; i++) {
-		contacts[i] = contacts[i + 1];
+	while ((dh = getchar()) != '\n' && dh != EOF);
+	printf("정말 삭제하시겠습니까? y or n ");
+	scanf("%c", &ch);
+	while ((dh = getchar()) != '\n' && dh != EOF);
+	if ('y' == ch) {
+		for (int i = num - 1; i < count - 1; i++) {
+			contacts[i] = contacts[i + 1];
+		}
+		count--;
+		printf("삭제완료\n");
+		return;
 	}
-	count--;
-	printf("삭제완료\n");
+	printf("삭제 취소\n");
+	
+	
 
 }
 static void save() {
@@ -276,7 +287,7 @@ static void load() {
 	FILE* fp = fopen("address.txt", "r");
 	if (fp == NULL) {
 		puts("파일이 없거나 열 수 없습니다.");
-		return; // 파일이 없으면 함수 종료
+		return;
 	}
 	char temp[5];
 	count = 0;

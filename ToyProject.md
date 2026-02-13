@@ -32,8 +32,11 @@
 - 이름으로 검색
 - 이름 부분일치(김 -> 김철수 전부 검색)
 - 결과 없으면 메세지
+- 삭제 기능 구현 완료
+
 
 
 ### 스텝4
 - 파일 입출력까지 모두 구현 완료 [소스](./Day10/ToyProject01/addressbookapp4.c/addressbookapp4.c)
-
+![alt text](step4-1.png)
+![alt text](step4-2.png)
