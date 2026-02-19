@@ -24,6 +24,7 @@
     <ProjectGuid>{1af58def-5ed8-404a-9646-d0a2c654d0d3}</ProjectGuid>
     <RootNamespace>addressbookapp4c</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>addressbookapp4</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
