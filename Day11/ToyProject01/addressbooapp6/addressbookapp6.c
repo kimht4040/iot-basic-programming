@@ -32,24 +32,30 @@ static void update();
 static void del();
 static void save();
 static void load();
-
+static int contains_space(const char*);
+static int find_by_phone(const char*);
+static void sort_name();
 int main() {
 	int choice;
 
 	load();
+	sort_name();
 	while (1) {
 
 		print_menu();
 		choice = read_menu();
+		
 		switch (choice) {
 		case 1:
 			add_contact();
+			sort_name();
 			break;
 		case 2:
 			list_contacts();
 			break;
 		case 3:
 			update();
+			sort_name();
 			break;
 		case 4:
 			del();
@@ -63,6 +69,7 @@ int main() {
 			exit(0);
 			break;
 		default:
+			clear_screen();
 			printf("1 ~ 6사이에 선택\n");
 		}
 
@@ -82,16 +89,41 @@ static void add_contact() {
 	puts("새 연락처 입력");
 	printf("이름 : ");
 	read_line(contacts[count].name, NAME_LEN);
-	printf("전화 : ");
+	if (contains_space(contacts[count].name)) {
+		printf("이름에 공백이 포함되어 있습니다. 공백을 제거해주세요.\n");
+		return;
+	}
+	printf("전화번호 : ");
 	read_line(contacts[count].phone, PHONE_LEN);
+	if (contains_space(contacts[count].phone)) {
+		printf("전화번호에 공백이 포함되어 있습니다. 공백을 제거해주세요.\n");
+		return;
+	}
+	if (find_by_phone(contacts[count].phone) >= 0) {
+		printf("이미 존재하는 전화번호입니다. 다른 번호를 입력해주세요.\n");
+		return;
+	}
 	printf("주소 : ");
 	read_line(contacts[count].address, ADDR_LEN);
+	if (contains_space(contacts[count].address)) {
+		printf("주소에 공백이 포함되어 있습니다. 공백을 제거해주세요.\n");
+		return;
+	}
 	printf("이메일 : ");
 	read_line(contacts[count].email, EMAIL_LEN);
+	if (contains_space(contacts[count].email)) {
+		printf("이메일에 공백이 포함되어 있습니다. 공백을 제거해주세요.\n");
+		return;
+	}
 	printf("메모 : ");
 	read_line(contacts[count].memo, MEMO_LEN);
+	if (contains_space(contacts[count].memo)) {
+		printf("메모에 공백이 포함되어 있습니다. 공백을 제거해주세요.\n");
+		return;
+	}
 	count++;
 	puts("추가완료");
+	
 }
 static void read_line(char* buf, int size) {
 	if (fgets(buf, size, stdin) == NULL) {
@@ -107,7 +139,7 @@ void clear_screen() {
 }
 static void print_menu() {
 	puts("==================================================");
-	puts("              주소록 프로그램 (STEP 5)            ");
+	puts("              주소록 프로그램 (STEP 6)            ");
 	puts("==================================================");
 	printf("기능\n1.추가\n2.목록\n3.수정\n4.삭제\n5.검색\n6.종료\n");
 }
@@ -289,13 +321,37 @@ static void load() {
 		puts("파일이 없거나 열 수 없습니다.");
 		return;
 	}
-	char temp[5];
+	int* temp;
 	count = 0;
-	while (fscanf(fp, "%d %s %s %s %s %s",
-		temp, contacts[count].name, contacts[count].phone, contacts[count].email,
+	while (fscanf(fp, "%d %30s %20s %64s %128s %128s",
+		&temp, contacts[count].name, contacts[count].phone, contacts[count].email,
 		contacts[count].address, contacts[count].memo) == 6) {
 		count++;
 	}
 	puts("address.txt 파일에서 불러오기 완료");
 	fclose(fp);
+}
+
+static int contains_space(const char* s) {
+	return strchr(s, ' ') != NULL;
+}
+static int find_by_phone(const char* phone) {
+	for (int i = 0; i < count; i++) {
+		if (strcmp(contacts[i].phone, phone) == 0) {
+			return i;
+		}
+	}
+	return -1;
+}
+
+static void sort_name() {
+	for (int i = 0; i < count - 1; i++) {
+		for (int j = 0; j < count - i - 1; j++) {
+			if (strcmp(contacts[j].name, contacts[j + 1].name) > 0) {
+				Contact temp = contacts[j];
+				contacts[j] = contacts[j + 1];
+				contacts[j + 1] = temp;
+			}
+		}
+	}
 }

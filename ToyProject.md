@@ -40,3 +40,18 @@
 - 파일 입출력까지 모두 구현 완료 [소스](./Day10/ToyProject01/addressbookapp4.c/addressbookapp4.c)
 ![alt text](step4-1.png)
 ![alt text](step4-2.png)
+
+### 스텝5
+- 따로 저장 로드가 아닌 실행시 로드, 종료시 저장
+![alt text](image-4.png)
+
+### 스텝6
+- 주소 저장시 정렬하여 저장
+![alt text](image-3.png)
+
+### 스텝7
+- 동적배열 활용하여 100개 이상 저장
+![alt text](image-2.png)
+### 스텝8
+- 단일 파일이 아닌 여러 파일로 분리하여 컴파일
+![alt text](image-1.png)
